@@ -1,0 +1,11 @@
+Tests for qx
+Tests for qy
+EXISTS/ NOT EXISTS (qz)
+CASE..WHEN syntax (qz)
+Window Functions (qz/qy?)
+Recursive CTEs
+JSON operations
+
+Wow, I do NOT like adding migrate into my library, it adds like 400 extra lines of dependencies into my go.sum
+--> Use a different way of loading data into the test database, don't use migrate
+I don't need godotenv, I'll just source the env file manually before any tests

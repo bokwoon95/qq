@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  database_dev:
+    container_name: "${DATABASE_NAME}"
+    image: 'nusskylab2/postgres_plpgsql_check_pgtap'
+    ports:
+      - "${DATABASE_PORT}:5432"
+    volumes:
+      - 'pgdata:/var/lib/postgresql/data'
+      - './:/testdata'
+    environment:
+      POSTGRES_USER: "${DATABASE_USER}"
+      POSTGRES_PASSWORD: "${DATABASE_PASSWORD}"
+      POSTGRES_DB: "${DATABASE_NAME}"
+volumes:
+  pgdata:

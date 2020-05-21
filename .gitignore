@@ -1,0 +1,4 @@
+.idea/
+/cmd/qxgen/
+coverage.out
+/gen/
